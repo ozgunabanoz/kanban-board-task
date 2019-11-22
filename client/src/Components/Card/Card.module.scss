@@ -1,0 +1,56 @@
+.card {
+    width: 100;
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #b8b5b5;
+    text-align: left;
+    perspective: 150rem;
+
+    &__title {
+        font-size: 2.7rem;
+        font-weight: 600;
+    }
+
+    &__description {
+        font-size: 2.5rem;
+    }
+
+    &__due-date {
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    &__complete-date {
+        color: white;
+        font-size: 1.7rem;
+        font-weight: 600;
+        background-color: rgb(95, 197, 95);
+        padding: 0.5rem;
+        width: fit-content;
+        float: right;
+    }
+}
+
+.row {
+    max-width: 100%;
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+.bottom-section {
+    margin-top: 2rem;
+
+    i {
+        cursor: pointer;
+        margin-right: 1rem;
+    }
+}

@@ -1,0 +1,14 @@
+.board {
+    padding: 1rem;
+    text-align: left;
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 600;
+
+        i {
+            vertical-align: middle;
+            font-size: 4rem;
+        }
+    }
+}

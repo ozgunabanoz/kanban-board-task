@@ -1,0 +1,118 @@
+.row {
+    max-width: 100%;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    [class^='Landing_col-'] {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - #{4rem} * 2) / 3);
+    }
+}
+
+.modal {
+    background-color: rgba(black, 0.8);
+    z-index: 2500;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &__popup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40%;
+        background-color: white;
+        box-shadow: 0 2rem 4rem rgba(black, 0.2);
+        border-radius: 3px;
+        overflow: hidden;
+        font-size: 2rem;
+        backdrop-filter: blur(10px);
+    }
+}
+
+.headline {
+    border-bottom: 1px solid gray;
+    padding: 2rem;
+    width: 100%;
+    display: inline-block;
+
+    &__text {
+        font-size: 3rem;
+        font-weight: 600;
+        float: left;
+    }
+
+    &__close-button {
+        float: right;
+        cursor: pointer;
+
+        i {
+            font-size: 3rem;
+            vertical-align: middle;
+        }
+    }
+}
+
+.submit__form {
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+
+    input,
+    label {
+        display: block;
+    }
+
+    input,
+    textarea {
+        margin: 0.5rem;
+        width: 100%;
+        border: 1px solid grey;
+        font-size: 1.75rem;
+        padding: 1rem;
+        border-radius: 3px;
+    }
+}
+
+.form__buttons {
+    border-top: 1px solid gray;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    text-align: right;
+
+    button {
+        width: auto;
+        font-size: 1.75rem;
+        padding: 1rem;
+        border-radius: 3px;
+        color: white;
+        cursor: pointer;
+    }
+
+    &__close {
+        background-color: gray;
+        margin-right: 2rem;
+    }
+
+    &__submit {
+        background-color: rgb(0, 162, 255);
+    }
+}

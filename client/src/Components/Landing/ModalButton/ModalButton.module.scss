@@ -1,0 +1,11 @@
+.modal__button {
+    position: fixed;
+    top: 70rem;
+    right: 5rem;
+    cursor: pointer;
+    z-index: 2000;
+
+    i {
+        font-size: 5rem;
+    }
+}
